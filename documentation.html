@@ -1,0 +1,130 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>SARIK - Documentação</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">DOWNLOAD</a></li>
+                    <li><a href="">DOCUMENTAÇÃO</a></li>
+                    <li><a href="">VÍDEOS</a></li>
+                    <li><a href="">GUIA</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <div class="header-info">
+                <h1>
+                    SARIK
+                </h1>
+                <hr>
+                <h3>
+                    Rápido, simples e eficiente.
+                </h3>
+                <p>Framework capaz de configurar seus PODs em Kubernetes automaticamente, garantindo segurança na camada NODE.</p>
+                <a href="#" class="button">DOWNLOAD</a>
+            </div>
+        </main>
+
+        <section id="video">
+                <div class="block">
+                    <svg width="169" height="169" viewBox="0 0 169 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="84.5" cy="84.5" r="84.5" fill="#222751"/>
+                        <path d="M64.5 49.493L126 85L64.5 120.507L64.5 49.493Z" stroke="#F4F1F1" stroke-width="5"/>
+                        </svg>
+                        
+                </div>
+        </section>
+
+        <section id="code-snippets">
+            <div class="container">
+                
+                <div class="slide" for="slide1">
+                    <div class="code-snippet">
+                        <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28222%2C171%2C99%2C0%29&t=duotone-dark&wt=none&l=yaml&width=320&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=apiVersion%253A%2520apps%252Fv1%250Akind%253A%2520Deployment%250Ametadata%253A%250A%2520%2520labels%253A%250A%2520%2520%2520%2520app%253A%2520db%250A%2520%2520name%253A%2520db%250A%2520%2520namespace%253A%2520vote%250Aspec%253A%250A%2520%2520replicas%253A%25201%250A%2520%2520selector%253A%250A%2520%2520%2520%2520matchLabels%253A%250A%2520%2520%2520%2520%2520%2520app%253A%2520db%250A%2520%2520template%253A%250A%2520%2520%2520%2520metadata%253A%250A%2520%2520%2520%2520%2520%2520labels%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520app%253A%2520db%250A%2520%2520%2520%2520spec%253A%250A%2520%2520%2520%2520%2520%2520containers%253A%250A%2520%2520%2520%2520%2520%2520-%2520image%253A%2520postgres%253A9.4%250A%2520%2520%2520%2520%2520%2520%2520%2520name%253A%2520postgres%250A%2520%2520%2520%2520%2520%2520%2520%2520env%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520name%253A%2520POSTGRES_USER%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520value%253A%2520postgres%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520name%253A%2520POSTGRES_PASSWORD%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520value%253A%2520postgres%250A%2520%2520%2520%2520%2520%2520%2520%2520ports%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520containerPort%253A%25205432%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253A%2520postgres%250A%2520%2520%2520%2520%2520%2520%2520%2520volumeMounts%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520mountPath%253A%2520%252Fvar%252Flib%252Fpostgresql%252Fdata%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253A%2520db-data%250A%2520%2520%2520%2520%2520%2520volumes%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520name%253A%2520db-data%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520emptyDir%253A%2520%257B%257D"
+                        style="width: 320px; height: 720px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>                  
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28222%2C171%2C99%2C0%29&t=duotone-dark&wt=none&l=yaml&width=320&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=apiVersion%253A%2520apps%252Fv1%250Akind%253A%2520Deployment%250Ametadata%253A%250A%2520%2520labels%253A%250A%2520%2520%2520%2520app%253A%2520redis%250A%2520%2520name%253A%2520redis%250A%2520%2520namespace%253A%2520vote%250Aspec%253A%250A%2520%2520replicas%253A%25201%250A%2520%2520selector%253A%250A%2520%2520%2520%2520matchLabels%253A%250A%2520%2520%2520%2520%2520%2520app%253A%2520redis%250A%2520%2520template%253A%250A%2520%2520%2520%2520metadata%253A%250A%2520%2520%2520%2520%2520%2520labels%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520app%253A%2520redis%250A%2520%2520%2520%2520spec%253A%250A%2520%2520%2520%2520%2520%2520containers%253A%250A%2520%2520%2520%2520%2520%2520-%2520image%253A%2520redis%253Aalpine%250A%2520%2520%2520%2520%2520%2520%2520%2520name%253A%2520redis%250A%2520%2520%2520%2520%2520%2520%2520%2520ports%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520containerPort%253A%25206379%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253A%2520redis%250A%2520%2520%2520%2520%2520%2520%2520%2520volumeMounts%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520mountPath%253A%2520%252Fdata%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253A%2520redis-data%250A%2520%2520%2520%2520%2520%2520volumes%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520name%253A%2520redis-data%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520emptyDir%253A%2520%257B%257D"
+                        style="width: 320px; height: 610px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </div>
+                    <div class="code-snippet">
+                        <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28222%2C171%2C99%2C0%29&t=duotone-dark&wt=none&l=yaml&width=320&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=false&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=apiVersion%253A%2520apps%252Fv1%250Akind%253A%2520Deployment%250Ametadata%253A%250A%2520%2520labels%253A%250A%2520%2520%2520%2520app%253A%2520result%250A%2520%2520name%253A%2520result%250A%2520%2520namespace%253A%2520vote%250Aspec%253A%250A%2520%2520replicas%253A%25201%250A%2520%2520selector%253A%250A%2520%2520%2520%2520matchLabels%253A%250A%2520%2520%2520%2520%2520%2520app%253A%2520result%250A%2520%2520template%253A%250A%2520%2520%2520%2520metadata%253A%250A%2520%2520%2520%2520%2520%2520labels%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520app%253A%2520result%250A%2520%2520%2520%2520spec%253A%250A%2520%2520%2520%2520%2520%2520containers%253A%250A%2520%2520%2520%2520%2520%2520-%2520image%253A%2520kodekloud%252Fexamplevotingapp_result%253Av1%250A%2520%2520%2520%2520%2520%2520%2520%2520name%253A%2520result%250A%2520%2520%2520%2520%2520%2520%2520%2520ports%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520-%2520containerPort%253A%252080%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520name%253A%2520result"
+                        style="width: 320px; height: 530px; border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                      </iframe>
+                    </div>
+
+                </div>
+                <div class="content-texto">
+                    <h2>Códigos do app de votação</h2>
+                </div>
+            </div>
+        </section>
+
+        <section id="trilhas">
+            <div class="container">
+                <h1>Inicie Sua Jornada.</h1>
+                <div class="tracks">
+
+                    <a class="track">
+                        <svg width="87" height="175" viewBox="0 0 145 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.1757 5.8915C26.3838 -1.93752 13.7205 -1.9676 5.8915 5.82431C-1.93752 13.6162 -1.9676 26.2795 5.82431 34.1085L34.1757 5.8915ZM125 125.5L139.176 139.609C146.941 131.806 146.941 119.194 139.176 111.391L125 125.5ZM5.82431 216.892C-1.9676 224.721 -1.93752 237.384 5.8915 245.176C13.7205 252.968 26.3838 252.938 34.1757 245.109L5.82431 216.892ZM5.82431 34.1085L110.824 139.609L139.176 111.391L34.1757 5.8915L5.82431 34.1085ZM110.824 111.391L5.82431 216.892L34.1757 245.109L139.176 139.609L110.824 111.391Z" fill="#C4C4C4"/>
+                            </svg>
+                            
+                        <div class="track-info">
+                            <h2>LEIA A DOC.</h2>
+                            <p>Acesse a documentação do SARIK e aprenda os primeiros passos.</p>
+                        </div>
+                    </a>
+                    <a class="track">
+                        <svg width="87" height="175" viewBox="0 0 145 251" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.1757 5.8915C26.3838 -1.93752 13.7205 -1.9676 5.8915 5.82431C-1.93752 13.6162 -1.9676 26.2795 5.82431 34.1085L34.1757 5.8915ZM125 125.5L139.176 139.609C146.941 131.806 146.941 119.194 139.176 111.391L125 125.5ZM5.82431 216.892C-1.9676 224.721 -1.93752 237.384 5.8915 245.176C13.7205 252.968 26.3838 252.938 34.1757 245.109L5.82431 216.892ZM5.82431 34.1085L110.824 139.609L139.176 111.391L34.1757 5.8915L5.82431 34.1085ZM110.824 111.391L5.82431 216.892L34.1757 245.109L139.176 139.609L110.824 111.391Z" fill="#C4C4C4"/>
+                            </svg>
+                            
+                        <div class="track-info">
+                            <h2>ACESSE O GUIA</h2>
+                            <p>Visite a página do guia e descubra os passos para a sua jornada.</p>
+                    </div>
+                </a>
+                <a class="track track-download" href="2022-01-25 16_49_27-Epic Pen Content Surface_ __._DISPLAY1.png" download="arquivo">
+                    <svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="96" cy="96" r="96" fill="#1B1E34"/>
+                        <path d="M96.378 50.6458V140.976M96.378 140.976L62.7402 107.339M96.378 140.976L130.016 107.339M96.378 140.976H62.7402H130.016" stroke="#C4C4C4" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                    <div class="track-info">
+                        <h2>DOWNLOAD</h2>
+                        <p>Baixe a última versão do SARIK e mude para sempre a forma como você trabalha.</p>                        
+                    </div>
+                </a>
+            </div>
+            </div>
+            </section>
+            
+            <footer>
+                <h5>SARIK</h5>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Download</a></li>
+                    <li><a href="">Documentação</a></li>
+                    <li><a href="">Vídeos</a></li>
+                    <li><a href="">Guia</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
