@@ -44,10 +44,10 @@
                         <li>Deployments</li>
                     </ul>
                 </h5><br><br>
-                <p><b>2º</b> Você pode usar a aplicação de votação disponível no SARIK. Execute essas próximas etapas para testar o SARIK. Acesse a pasta AppTest/debian e execute os comandos nessa ordem:</p>
+                <p><b>2º</b> Você pode usar a aplicação de votação disponível no SARIK. Acesse a pasta <b>AppTest/debian</b> e execute os comandos nessa ordem:</p>
                 <table>
                     <tr bgcolor="#DCDCDC">
-                        <td style="width: 50%;">$ kubectl create -f namespaces/</td>
+                        <td style="width:50%;">$ kubectl create -f namespaces/</td>
                     </tr>
                     <tr bgcolor="#FFF">
                         <td>&nbsp;</td>
@@ -65,12 +65,31 @@
                         <td>&nbsp;</td>
                     </tr>
                 </table>
+                <p>Aguarde os PODs serem carregados, dependendo da conexão, esse processo demora de 2 até 5 minutos.</p>
+                <p>Retorne a pasta raiz</p>
+                <table>
+                    <tr bgcolor="#DCDCDC">
+                        <td style="width:50%;">$ cd ..</td>
+                    </tr>
+                    <tr bgcolor="#FFF">
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                <p><b>3º</b> Execução do script</p>
+                <table>
+                    <tr bgcolor="#DCDCDC">
+                        <td style="width:50%;">$ bash sarik.sh</td>
+                    </tr>
+                    <tr bgcolor="#FFF">
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
             </div>
 
         </main>
 
             <br><br>
-            <footer>
+        <footer>
                 <h5>SARIK - Guia</h5>
             <nav>
                 <ul class="menu">
