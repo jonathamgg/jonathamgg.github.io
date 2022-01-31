@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="guia.css">
+    <title>Guia - SARIK</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h3>SARIK</h3>
+                <ul>
+                    <li><a href="https://sarik.org/download">
+                        DOWNLOAD</a></li>
+                    <li><a href="https://sarik.org/documentation">
+                        DOCUMENTAÇÃO</a></li>
+                    <li><a href="https://sarik.org/videos">
+                        VÍDEOS</a></li>
+                    <li><a href="https://sarik.org/guia">
+                        GUIA</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <div class="wrapper">
+        <aside id="menu">
+            <div class="container">
+            <ul>
+                <li>
+                    Guia passo a passo
+                </li>
+                <li>
+                    <a href="#download">Como fazer o download?</a>
+                </li>
+                <li>
+                    <a href="#app">Intalação do APP</a>
+                    <ul>
+                        <li><a href="#case-1">1º - Estrutura do App</a></li>
+                        <li><a href="#case-1">2º - Usando aplicação de <br>exemplo</a></li>
+                        <li><a href="#case-1">3º - Executando o script</a></li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+        </aside>
+        <section id="content">
+            <div class="container">
+                <h1>
+                    Bem-vindo ao guia do SARIK
+                    <p>Abaixo, encontra-se um passo a passo para o download do framework e sua utilização.</p>
+                </h1>
+            </div>
+            
+            <section class="intro">
+                <div id="download">
+                    <h2 >DOWNLOAD</h2>
+                    <p>O download do SARIK pode ser efeito através do GIT, utilizando a seguinte linha de comando:</p>
+                    <code>git clone git@github.com:jonathamgg/sarik.git</code>
+                </div>
+            </section>
+    
+            <section id="app">
+                <div class="container">
+                    <h2>Utilizando o SARIK em uma aplicação</h2>
+                    <h3 id="case-1" >Caso não tenha um app em funcionamento, com a seguinte estrutura:</h3>
+                    <ul>
+                        <li>Namespace</li>
+                        <li>Services</li>
+                        <li>Deployments</li>
+                    </ul>
+                    
+                    <h3 id="case-2">Você pode usar a aplicação de votação disponível no SARIK. Acesse a pasta AppTest e escolha a plataforma: minikube/azure/google, acesse e execute os comandos nessa ordem:</p>
+                    <code>
+                        $ kubectl create -f namespaces/<br>
+                        $ kubectl create -f services/<br>
+                        $ kubectl create -f deployements/<br>
+                    </code>
+                    <p>Aguarde os PODs serem carregados, dependendo da conexão, esse processo demora de 2 até 5 minutos</p>
+                    <p>Retorne para a pasta raiz:</p>
+                    <code>$ cd ../..</code>
+                    
+                    <h3 id="case-3">Execução do script:</p>
+                    <code>
+                        $ bash sarik.sh
+                    </code>
+                </div>
+                
+            </section>
+        </section>
+    </div>
+  
+    
+</body>
+</html>
