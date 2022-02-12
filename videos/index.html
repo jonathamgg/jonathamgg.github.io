@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="videos.css">
+    <title>Vídeos - SARIK</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="./index.html">SARIK</a>
+                <input type="checkbox" name="menu" id="menu-buttom">
+                <label for="menu-buttom">
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="../download">
+                        DOWNLOAD</a></li>
+                    <li><a href="../documentation">
+                        DOCUMENTAÇÃO</a></li>
+                    <li><a href="../videos">
+                        VÍDEOS</a></li>
+                    <li><a href="../guia">
+                        GUIA</a></li>
+                </ul>
+                
+            </nav>
+        </div>
+        
+    </header>
+
+    <section id="videos">
+        <div class="container">
+            <div class="intro">
+                <h1>Aqui você irá encontrar tutoriais sobre como adotar o SARIK em seus projetos.</h1>
+            </div>
+            <div id="video-player">
+                <iframe   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="videos">
+                <a href="#video-player" class="video-box v-checked" data-iframe="https://www.youtube.com/embed/bhm5jowuJ0A">
+                    <p class="title">Demonstração na Google Cloud Platform</p>
+                </a>
+                <a href="#video-player" class="video-box" data-iframe="https://www.youtube.com/embed/VqW1j5jMeRg">
+                    <p class="title">Demonstração na Microsoft Azure</p>
+                </a>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="videos.js"></script>
+
+    <footer>
+        <a href="./index.html">SARIK</a>
+        <ul class="menu">
+            <li><a href="../download">Download</a></li>
+            <li><a href="../documentation">Documentação</a></li>
+            <li><a href="../videos">Vídeos</a></li>
+            <li><a href="../guia">Guia</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
