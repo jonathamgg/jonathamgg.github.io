@@ -165,12 +165,13 @@ main hr{
 #video{
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 #video .block{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
     margin: 2rem 0;
 }
 #video .block iframe{
