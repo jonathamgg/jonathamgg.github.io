@@ -176,8 +176,8 @@ main hr{
 }
 #video .block iframe{
     display: block;
-    width: 90%;
-    min-height: 30rem;
+    width: 80%;
+    min-height: 50rem;
     height: 55rem;
 }
 
