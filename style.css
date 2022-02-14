@@ -166,14 +166,18 @@ main hr{
     display: flex;
     justify-content: center;
 }
-
 #video .block{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120rem;
-    height: 80rem;
-    background-color: #DFE1EB;
+    max-width: 100%;
+    margin: 2rem 0;
+}
+#video .block iframe{
+    display: block;
+    width: 90%;
+    min-height: 30rem;
+    height: 55rem;
 }
 
 /* ----------- */
