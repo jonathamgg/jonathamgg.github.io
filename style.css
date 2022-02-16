@@ -129,7 +129,7 @@ header ul li a{
 
 @media screen and (max-width: 768px){
     header .container{
-        padding: 2rem;
+        padding: 0 2rem;
     }
     #menu-buttom:checked + label + ul{
         display: flex;
