@@ -1,2 +1,2 @@
 # jonathamgg.github.io
-Site [SARIK](https://sarik.org)
+Site:  [SARIK](https://sarik.org)
