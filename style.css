@@ -90,10 +90,7 @@ p{
 /* HEADER */
 /* ------------ */
 header{
-    background-color: #F4F1F1 ;
-}
-header{
-   background-color: #F4F1F1 ;
+   background-color: #222751;
     color: white;
     z-index: 2;
     
@@ -107,7 +104,7 @@ header nav{
 header nav > a,
 footer > a{
     font-size: 3.5rem;
-    color: #3c3c3c;
+    color: white;
     text-decoration: none;
     font-family: 'Syncopate', serif;
 }
@@ -123,7 +120,7 @@ header ul{
     gap: 2rem;
 }
 header ul li a{
-    color: #3c3c3c;
+    color: white;
 }
 
 #menu-buttom{
