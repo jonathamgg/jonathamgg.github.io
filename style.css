@@ -92,20 +92,116 @@ p{
 header{
     background-color: #F4F1F1 ;
 }
+header{
+   background-color: #F4F1F1 ;
+    color: white;
+    z-index: 2;
+    
+}
 
-header nav ul{
-    width: 100%;
+header nav{
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+header nav > a,
+footer > a{
+    font-size: 3.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Syncopate', serif;
+}
+
+header nav > a:hover,
+footer > a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+header ul{
+    display: flex;
+    gap: 2rem;
+}
+header ul li a{
+    color: white;
+}
+
+#menu-buttom{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    #menu-buttom:checked + label + ul{
+        display: flex;
+    }
+    #menu-buttom:checked + label span{
+        background-color: transparent;
+    }
+
+    #menu-buttom:checked + label span::after{
+        display: none;
+    }
+    #menu-buttom:checked + label span::before{
+        content: 'X';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 2rem;
+        top: -3rem;
+        width: 4rem;
+        height: 4rem;
+        background-color: #222751;
+        position: absolute;
+        z-index: 3;
+    }
+
+
+    header nav ul{
+        display: none;
+        gap: 10px;
+        width: 100%;
+        height: 100vh;
+        background-color: #141414;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header label{
+        cursor: pointer;
+    }
+
+    header label span::before,
+    header label span::after,
+    header label span{
+        display: block;
+        width: 5rem;
+        height: .3rem;
+        background-color: white;
+        margin: 1rem 0;
+        position: relative;
+        z-index: 3;
+    }
+
+    header label span::before{
+        content: '';
+        position: absolute;
+        top: .3rem;
+    }
+
+    header label span::after{
+        content: '';
+        position: absolute;
+        bottom: .3rem;
+    }
 }
 
 
-header ul li{
-    padding: 2rem;
-
-}
 
 /* ----------- */
 /* MAIN */
