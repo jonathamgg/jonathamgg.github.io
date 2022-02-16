@@ -85,6 +85,7 @@ p{
 .container{
     margin: 0 auto;
     max-width: 130rem;
+    padding: 0 2rem;
 }
 /* ------------ */
 /* HEADER */
