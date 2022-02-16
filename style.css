@@ -107,7 +107,7 @@ header nav{
 header nav > a,
 footer > a{
     font-size: 3.5rem;
-    color: white;
+    color: #3c3c3c;
     text-decoration: none;
     font-family: 'Syncopate', serif;
 }
@@ -123,7 +123,7 @@ header ul{
     gap: 2rem;
 }
 header ul li a{
-    color: white;
+    color: #3c3c3c;
 }
 
 #menu-buttom{
