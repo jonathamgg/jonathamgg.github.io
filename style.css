@@ -391,11 +391,11 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #EDEEF1;
+    background-color: #222751;
 }
 
 footer h5{
-    color: #222751;
+    color: white;
     margin-top: 3rem;
     font-family: 'Syncopate', sans-serif;
 }
@@ -407,6 +407,7 @@ footer ul{
 }
 
 footer ul a{
+    color: white;
     margin-right: 1rem;
 }
 
