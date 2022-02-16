@@ -30,7 +30,7 @@ a{
 }
 
 a:hover{
-    color: #222751;
+    text-decoration: underline;
 }
 
 
