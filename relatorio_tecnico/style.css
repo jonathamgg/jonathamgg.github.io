@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --purple-clr: #222751;
+  --light-purple-clr: #50568e;
+}
+
+body {
+  background-color: #1d1d1d;
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Syncopate", sans-serif;
+  color: var(--purple-clr);
+  font-size: 5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid var(--purple-clr);
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  background-image: linear-gradient(to top, #e7e7e7, #ffffff);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+header h4{
+  margin: 1rem 0;
+}
+
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 70vh;
+}
+
+aside {
+  background-color: var(--purple-clr);
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: scroll;
+  color: white;
+}
+
+aside p {
+  display: inline;
+}
+
+aside div {
+  margin: 0.5rem 0;
+}
+
+.dir p,
+.file p {
+  margin-left: 0.5rem;
+  line-break: anywhere;
+
+}
+
+
+
+aside .dir div,
+aside .file div{
+    cursor: pointer;
+}
+
+aside .dir div div > *,
+aside .file div div > *{
+    pointer-events: none;
+}
+
+section {
+  padding: 2rem;
+  flex: 2;
+  color: black;
+  background-color: #ffffff;
+  text-align: justify;
+  overflow-y: scroll;
+}
+
+section h1{
+  font-size: 2rem;
+  text-align: left;
+}
+
+section h2{
+  font-size: 1.8rem;
+  margin: .5rem 0;
+}
+section h3{
+  font-size: 1.6rem;
+  text-decoration: underline;
+  font-weight: 400;
+  margin: .5rem 0;
+}
+
+section hr{
+  border: 1px solid #6e74ac;
+  margin: 1rem 0;
+}
+section ul li{
+  list-style: disc;
+  margin: .5rem 2rem;
+}
+section a{
+  color: var(--light-purple-clr);
+}
+
+table{
+  border: 1px solid var(--light-purple-clr);
+  margin: 1rem 0;
+}
+
+table thead th,
+table tr td{
+  border: 1px solid var(--light-purple-clr);
+  border-collapse: collapse;
+  padding: 1rem;
+}
+
+
+
+.hide {
+  display: none;
+  background-color: yellow;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #868fdf; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+  margin: 0 auto;
+
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  main{
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 425px){
+  main{
+    flex-direction: row;
+  }
+}
