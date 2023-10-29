@@ -1,7 +1,7 @@
 import { Octokit } from "https://esm.sh/octokit";
 
 const octokit = new Octokit({
-  auth: "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",
+  auth: "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",
 });
 
 const { data } = await getDataFromGithub();
