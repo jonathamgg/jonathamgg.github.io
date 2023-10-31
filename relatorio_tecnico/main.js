@@ -1,13 +1,7 @@
-import { Octokit } from "https://esm.sh/octokit";
-
-const octokit = new Octokit({
-  auth: "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",
-});
-
-const { data } = await getDataFromGithub();
-const { data: relatorioTecnico } = await getDataFromGithub(
+const data = await getDataFromGithub();
+const relatorioTecnico = await getDataFromGithub(
   createMap(data).get("Relatório Técnico").path
-);
+  );
 const contents = createMap(relatorioTecnico);
 
 createTree(contents);
@@ -27,6 +21,7 @@ function createTree(content, parent = "") {
 }
 
 function createMap(obj) {
+  console.log(obj)
   return new Map(
     obj.map(({ name, type, download_url, sha, path }) => {
       return [name, { path, type, download_url, sha }];
@@ -35,15 +30,8 @@ function createMap(obj) {
 }
 
 async function getContentFromFolder(folder, parent = "", url = "") {
-  const { data } = await octokit.request(
-    "GET /repos/{owner}/{repo}/contents/{folder}?ref={branch}",
-    {
-      owner: "jonathamgg",
-      repo: "sarik_validation_graphics",
-      folder: folder,
-      branch: "master",
-    }
-  );
+  const res = await fetch(`https://api.github.com/repos/jonathamgg/sarik_validation_graphics/contents/${folder}?ref=master`);
+  const data = await res.json();
 
   if (parent.classList.contains("is-open")) {
     parent.classList.remove("is-open");
@@ -63,19 +51,13 @@ async function getContentFromRaw(url, element) {
 }
 
 async function getDataFromGithub(folder = "") {
-  const result = await octokit.request(
-    "GET /repos/{owner}/{repo}/contents/{folder}?ref={branch}",
-    {
-      owner: "jonathamgg",
-      repo: "sarik_validation_graphics",
-      folder: folder,
-      branch: "master",
-    }
-  );
+  const res = await fetch(`https://api.github.com/repos/jonathamgg/sarik_validation_graphics/contents/${folder}?ref=master`);
+  const result = await res.json();
+
+  console.log(result)
 
   if (result) {
     document.querySelector(".loader").style.display = "none";
-    console.log("oi");
   }
 
   return result;
