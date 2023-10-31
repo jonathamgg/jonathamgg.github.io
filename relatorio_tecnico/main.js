@@ -5,6 +5,7 @@ const relatorioTecnico = await getDataFromGithub(
 const contents = createMap(relatorioTecnico);
 
 createTree(contents);
+displayContent(getContentFromRaw('https://raw.githubusercontent.com/jonathamgg/sarik_validation_graphics/master/Relat%C3%B3rio%20T%C3%A9cnico/latencia/metrica_latencia_db_apt.md'))
 
 for (let [name, { path, type, download_url, sha }] of contents) {
   const div = document.getElementById(sha);
