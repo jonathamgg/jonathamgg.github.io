@@ -82,6 +82,7 @@ function displayContent(content) {
         $container.appendChild($content);
         $loader.style.display ='none';
         $container.appendChild($loader);
+        setHiperLinks()
       }, 2000);
     } else {
       $container.removeChild($container.children[0]);
@@ -135,4 +136,16 @@ function createContent(name, type, id, $parent = "", url = "") {
   } else {
     $folders.append($folder);
   }
+}
+function setHiperLinks () {
+  const hiperLinks = [...document.querySelectorAll("ul li a")];  
+  let headers = [...document.querySelectorAll("section > div h2")];
+  headers = headers.slice(1)
+  hiperLinks.pop()
+
+  hiperLinks.forEach(function(link,idx){
+    link.setAttribute("href","#"+link.innerText)
+    headers[idx].id=link.innerText
+  })
+  console.log(hiperLinks, headers)
 }
